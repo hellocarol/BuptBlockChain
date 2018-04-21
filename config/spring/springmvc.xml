@@ -1,0 +1,54 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.2.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-4.2.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-4.2.xsd ">
+	
+	<!-- 扫描controller注解,多个包中间使用半角逗号分隔 -->
+	<context:component-scan base-package="cn.itcast.ssm.controller"/>
+	
+	<!-- 静态资源的解析 包括js、css、img等 -->
+	<mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
+	<mvc:resources mapping="/js/**" location="/js/" />
+
+
+	
+	
+	<!--注解映射器
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/> -->
+	<!--注解适配器
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/> -->
+	
+	 <!-- <mvc:annotation-driven conversion-service="conversionService" validator="validator"></mvc:annotation-driven>   -->
+	 <mvc:annotation-driven></mvc:annotation-driven>
+	 
+	 
+	<!-- ViewResolver视图解析器 -->
+	<bean
+	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+
+	
+</beans>
+
+
+
+
+
+
