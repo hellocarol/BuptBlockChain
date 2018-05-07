@@ -10,4 +10,14 @@ public class IndexHomeController {
 	public String blockchain_info() {
 		return "home/blockchain_info";
 	}
+	//信息概览》创世区块结构
+	@RequestMapping("/genesisblock_structure")
+	public String genesisblock_structure() {
+		return "home/genesisblock_structure";
+	}
+	//信息概览》区块链激励机制
+	@RequestMapping("/blockchain_encourage")
+	public String blockchain_encourage() {
+		return "home/blockchain_encourage";
+	}
 }

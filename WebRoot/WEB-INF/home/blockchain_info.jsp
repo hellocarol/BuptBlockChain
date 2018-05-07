@@ -41,71 +41,8 @@
 
   <body class="opaque-nav" id="home-container">
   <!--导航栏-->
-  <nav role="navigation" class="">
-    <ul class="igation">
-      <li>
-        <a class="bc-logo" href="">
-          <!--<img src="./src/white-blockchain.svg" alt="BUPT区块链服务平台">-->
-          <h3 style="margin-bottom: 23px;">北京邮电大学区块链服务平台</h3>
-        </a>
-        <button class="menu-button">
-          <span></span>
-        </button>
-        <button class="search-button" type="button"></button>
-      </li>
-      <li class="with-children">
-        <a href="" id="wallet-link">信息概览</a>
-        <ul>
-          <li><a href="${pageContext.request.contextPath}/blockchain_info.action">区块链信息</a></li>
-          <li><a href="" id="">创世块区块结构&nbsp;&nbsp;</a></li>
-          <li><a href="" id="">区块链信息结构&nbsp;&nbsp;</a></li>
-          <li><a href="" id="">区块链激励机制&nbsp;&nbsp;</a></li>
-        </ul>
-      </li>
-      
-      <li class="with-children">
-        <a href="" id="nav-data">地址管理</a>
-        <ul>
-          <li><a href="" id="nav-charts">生成地址</a></li>
-        </ul>
-      </li>
-      
-      
-      <li class="with-children">
-        <a href="" id="nav-api">钱包系统</a>
-        <ul>
-          <li><a href="" id="nav-business">转账</a></li>
-        </ul>
-      </li>
-      
-      
-      <li class="with-children">
-        <a href="" id="nav-about">区块链浏览器</a>
-        <ul>
-          <li><a href="" id="nav-team">最近交易&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-          <li><a href="" id="nav-careers">对公信贷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-          <li><a href="" id="nav-press">信贷管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-        </ul>
-      </li>
-       <li class="with-children">
-        <a href="" id="">关于</a>
-        <ul>
-          <li><a href="" id="">关于系统</a></li>
-        </ul>
-      </li>
-      <!--<li class="flex-space"></li>-->
-
-      <li style="margin-left: 150px;">
-        <a class="wallet-button" href="" target="_blank">登陆</a>
-      </li>
-      <li>
-        <a class="wallet-button" href="" target="_blank">注册</a>
-      </li>
-    </ul>
-  </nav>
+  <%@ include file="header.jsp"%>
   
-
-
 
   <div class="container pt-100">
     
@@ -138,14 +75,7 @@
 
 
   <!--底部栏-->
-  <footer data-symbol-local="{&quot;symbol&quot;:&quot;$&quot;,&quot;code&quot;:&quot;USD&quot;,&quot;symbolAppearsAfter&quot;:false,&quot;name&quot;:&quot;U.S. dollar&quot;,&quot;local&quot;:true,&quot;conversion&quot;:12369.19575489}" data-symbol-btc="{&quot;symbol&quot;:&quot;BTC&quot;,&quot;code&quot;:&quot;BTC&quot;,&quot;symbolAppearsAfter&quot;:true,&quot;name&quot;:&quot;Bitcoin&quot;,&quot;local&quot;:false,&quot;conversion&quot;:100000000.00000000}">
-    
-    <div class="flex-container">
-      <div class="copyright" style="text-align: center;">
-        <span>Copyright ©&nbsp;2018 BUPT Blockchain service platform by <a href="https://hellocarol.github.io/">hellocarol</a></span>
-      </div>
-    </div>
-  </footer>
+  <%@ include file="footer.jsp"%>
 
 
 
