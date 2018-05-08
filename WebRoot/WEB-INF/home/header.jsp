@@ -5,7 +5,7 @@
       <li>
         <a class="bc-logo" href="">
           <!--<img src="./src/white-blockchain.svg" alt="BUPT区块链服务平台">-->
-          <h3 style="margin-bottom: 23px;">北京邮电大学区块链服务平台</h3>
+          <h3 style="margin-bottom: 23px;"><a href="${pageContext.request.contextPath}/index.jsp">北京邮电大学区块链服务平台</a></h3>
         </a>
         <button class="menu-button">
           <span></span>
@@ -40,15 +40,15 @@
       <li class="with-children">
         <a href="" id="nav-about">区块链浏览器</a>
         <ul>
-          <li><a href="${pageContext.request.contextPath}/recentTransAction.action" id="nav-team">最近交易&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-          <li><a href="" id="nav-careers">对公信贷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-          <li><a href="" id="nav-press">信贷管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+          <li><a href="${pageContext.request.contextPath}/recentTransAction.action">最近交易&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+          <li><a href="${pageContext.request.contextPath}/waitForDevelopment.action">对公信贷&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+          <li><a href="${pageContext.request.contextPath}/waitForDevelopment.action">信贷管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
         </ul>
       </li>
        <li class="with-children">
         <a href="" id="">关于</a>
         <ul>
-          <li><a href="" id="">关于系统</a></li>
+          <li><a href="${pageContext.request.contextPath}/about.action">关于系统</a></li>
         </ul>
       </li>
       <!--<li class="flex-space"></li>-->

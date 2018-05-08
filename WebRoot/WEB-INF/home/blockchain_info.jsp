@@ -21,22 +21,7 @@
     <script type="text/javascript" src="js/homepage.js"></script>
     <meta name="Description" content="View detailed information and charts on BUPT's Bitcoin transactions and blocks. Visit today.">
  
-    <style type="text/css"> .adv{display: none;} .basic{display: inherit;} </style>
-    <style id="style-1-cropbar-clipper">
-      .en-markup-crop-options {
-        top: 18px !important;
-        left: 50% !important;
-        margin-left: -100px !important;
-        width: 200px !important;
-        border: 2px rgba(255,255,255,.38) solid !important;
-        border-radius: 4px !important;
-      }
 
-      .en-markup-crop-options div div:first-of-type {
-        margin-left: 0px !important;
-      }
-
-    </style>
   </head>
 
   <body class="opaque-nav" id="home-container">

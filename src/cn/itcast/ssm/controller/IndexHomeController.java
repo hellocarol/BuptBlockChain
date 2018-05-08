@@ -20,4 +20,9 @@ public class IndexHomeController {
 	public String blockchain_encourage() {
 		return "home/blockchain_encourage";
 	}
+	//¹ØÓÚ
+		@RequestMapping("/about")
+		public String about() {
+			return "home/about";
+		}
 }
